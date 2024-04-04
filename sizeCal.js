@@ -3,6 +3,7 @@ function sizeCalculate() {
   let h = (document.getElementById("myHeight").value).trim();
   let i = (document.getElementById("myInseam").value).trim();
   let size;
+  let bikeType = document.querySelector('input[name="btypeRad"]:checked').value;
   //xxxxx calculate bike size xxxxx
   if(t == 2){//road bike
     if(h >= 155 && h <= 163){
