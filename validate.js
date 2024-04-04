@@ -1,6 +1,6 @@
 function checkHeight() {
   let h = (document.getElementById("myHeight").value).trim();
-  if (!isNaN(h)) {
+  if (h >=0 && h<=200) {
     return true;
   } else {
 	return false;
