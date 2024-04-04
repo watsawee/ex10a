@@ -46,8 +46,6 @@ function sizeCalculate() {
    }
   }
   //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
+ 
   return size;
 }
-
-

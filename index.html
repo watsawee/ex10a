@@ -10,10 +10,10 @@
   <script src="sizeCal.js"></script>
 </head>
 <body>
-
+ 
 <div class="container mt-3">
   <h2>Calculate your bike size</h2><br>
-  
+ 
   <form action="#" method="post" onsubmit="return validateForm()">
     <div class="mb-3 mt-3">
       <label class="form-label"><span style="color:red">*</span>Bike type</label>&nbsp;&nbsp;<br>
@@ -31,15 +31,21 @@
         <input type="text" class="form-control" id="myHeight" name="myHeight"/>
     </div>
     <div class="mb-3 mt-3">
-        <label for="lname" class="form-label"><span style="color:red">*</span>Inseam (cm)
-        &nbsp;&nbsp;<img src="./info_btn.png" width="20" height="20"/></label>
+      <label for="lname" class="form-label"><span style="color:red" >*</span>Inseam (cm)
+      &nbsp;&nbsp;<img src="./info_btn.png" width="20" height="20"  
+        onClick="(function(){
+        var modal1 = new bootstrap.Modal(document.getElementById('myModal'));
+        document.getElementById('info-img').src='./inseam.png';
+        modal1.toggle();
+      })();return false;"/>
+    </label>
         <input type="text" class="form-control" id="myInseam" name="myInseam"/>
     </div>
     <button type="submit" class="btn btn-primary">Calculate</button>
     <button type="reset" class="btn btn-primary">Reset</button>
 </form><br><br>
 </div>
-
+ 
 <!-- The Modal -->
 <div class="modal" id="myModal">
   <div class="modal-dialog">
@@ -53,6 +59,6 @@
     </div>
   </div>
 </div>
-
+ 
 </body>
 </html>
