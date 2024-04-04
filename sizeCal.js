@@ -43,8 +43,8 @@ function sizeCalculate() {
       size = 'XL';
    }else{
       size = 'N/A';
+      }
    }
-  }
   //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
   return size;
