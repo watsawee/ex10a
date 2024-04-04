@@ -32,7 +32,7 @@ function sizeCalculate() {
     }else{
        size = 'N/A';
     }
-  }else{//mountain bike
+  }else if(t==1){//mountain bike
     if(h >= 155 && h <= 163){
       size = 'S';
    }else if(h >= 164 && h <= 169){
