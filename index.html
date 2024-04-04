@@ -28,12 +28,18 @@
             document.getElementById('info-img').src='./height.jpeg';
             modal1.toggle();
           })();return false;"/></label>
-        <input type="text" class="form-control" id="myHeight" name="myHeight"/ required >
+        <input type="text" class="form-control" id="myHeight" name="myHeight" / required >
     </div>
     <div class="mb-3 mt-3">
         <label for="lname" class="form-label"><span style="color:red">*</span>Inseam (cm)
-        &nbsp;&nbsp;<img src="./info_btn.png" width="20" height="20"/></label>
-        <input type="text" class="form-control" id="myInseam" name="myInseam"/required>
+        &nbsp;&nbsp;<img src="./info_btn.png" width="20" height="20"
+        onClick="(function(){
+          var modal1 = new bootstrap.Modal(document.getElementById('myModal'));
+          document.getElementById('info-img').src='./inseam.png';
+          modal1.toggle();
+        })();return false;"/>
+      </label>
+        <input type="text" class="form-control" id="myInseam" name="myInseam"  / required>
     </div>
     <button type="submit" class="btn btn-primary">Calculate</button>
     <button type="reset" class="btn btn-primary">Reset</button>
