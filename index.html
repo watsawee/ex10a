@@ -17,8 +17,8 @@
   <form action="#" method="post" onsubmit="return validateForm()">
     <div class="mb-3 mt-3">
       <label class="form-label"><span style="color:red">*</span>Bike type</label>&nbsp;&nbsp;<br>
-      <input type="radio" class="form-check-input" id="btype1" name="btypeRad" checked>&nbsp; Mountain bike &nbsp;&nbsp;
-  <input type="radio" class="form-check-input" id="btype2" name="btypeRad">&nbsp; Road bike
+      <input type="radio" class="form-check-input" id="btype1" name="btypeRad" value="1" checked>&nbsp; Mountain bike &nbsp;&nbsp;
+  <input type="radio" class="form-check-input" id="btype2" name="btypeRad" value="2">&nbsp; Road bike
   </div>
     <div class="mb-3 mt-3">
         <label for="fname" class="form-label"><span style="color:red">*</span>Height (cm)
@@ -28,12 +28,12 @@
             document.getElementById('info-img').src='./height.jpeg';
             modal1.toggle();
           })();return false;"/></label>
-        <input type="text" class="form-control" id="myHeight" name="myHeight"/>
+        <input type="text" class="form-control" id="myHeight" name="myHeight" required/>
     </div>
     <div class="mb-3 mt-3">
         <label for="lname" class="form-label"><span style="color:red">*</span>Inseam (cm)
         &nbsp;&nbsp;<img src="./info_btn.png" width="20" height="20"/></label>
-        <input type="text" class="form-control" id="myInseam" name="myInseam"/>
+        <input type="text" class="form-control" id="myInseam" name="myInseam" required/>
     </div>
     <button type="submit" class="btn btn-primary">Calculate</button>
     <button type="reset" class="btn btn-primary">Reset</button>
