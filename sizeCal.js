@@ -4,8 +4,9 @@ function sizeCalculate() {
   let i = (document.getElementById("myInseam").value).trim();
   let size;
   //xxxxx calculate bike size xxxxx
+ 
   if(t == 2){//road bike
-    if(h >= 155 && h <= 163){
+    if(h >= 1 && h <= 200){
        size = '50';
     }else if(h >= 164 && h <= 169){
        if(i >= 74 && h <= 77){
@@ -46,8 +47,9 @@ function sizeCalculate() {
    }
   }
   //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
+ 
   return size;
 }
-
-
+ 
+ 
+ 
