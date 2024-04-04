@@ -1,2 +1,3 @@
 FROM nginx:latest
-COPY ./index.html /usr/share/ngin/html/index.html
+COPY . /usr/share/nginx/html
+CMD ["nginx", "-g", "daemon off;"]
