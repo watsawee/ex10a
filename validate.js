@@ -1,18 +1,27 @@
 function checkHeight() {
   let h = (document.getElementById("myHeight").value).trim();
-  if (!isNaN(h)) {
-    return true;
+  if (h > 200) {
+	return false
   } else {
-	return false;
+	if (!isNaN(h)) {
+		return true;
+	  } else {
+		return false;
+	  }
   }
+  
 }
 
 function checkInseam() {
   let i = (document.getElementById("myInseam").value).trim();
-  if (!isNaN(i)) {
-    return true;
+  if (i > 100) {
+	return false
   } else {
-	return false;
+	if (!isNaN(i)) {
+		return true;
+	  } else {
+		return false;
+	  }
   }
 }
 
