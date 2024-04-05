@@ -1,6 +1,6 @@
 function checkHeight() {
   let h = (document.getElementById("myHeight").value).trim();
-  if (!isNaN(h)) {
+  if (h >= 0 && h <=200) {
     return true;
   } else {
 	return false;
@@ -9,7 +9,7 @@ function checkHeight() {
 
 function checkInseam() {
   let i = (document.getElementById("myInseam").value).trim();
-  if (!isNaN(i)) {
+  if (i >= 0 && i <= 100) {
     return true;
   } else {
 	return false;
