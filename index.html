@@ -28,12 +28,12 @@
             document.getElementById('info-img').src='./height.jpeg';
             modal1.toggle();
           })();return false;"/></label>
-        <input type="text" class="form-control" id="myHeight" name="myHeight"/>
+        <input type="number" class="form-control" id="myHeight" name="myHeight" min="1" max="200"/>
     </div>
     <div class="mb-3 mt-3">
         <label for="lname" class="form-label"><span style="color:red">*</span>Inseam (cm)
         &nbsp;&nbsp;<img src="./info_btn.png" width="20" height="20"/></label>
-        <input type="text" class="form-control" id="myInseam" name="myInseam"/>
+        <input type="number" class="form-control" id="myInseam" name="myInseam" min="1" max="100"/>
     </div>
     <button type="submit" class="btn btn-primary">Calculate</button>
     <button type="reset" class="btn btn-primary">Reset</button>
